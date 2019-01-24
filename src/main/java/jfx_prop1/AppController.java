@@ -19,7 +19,6 @@ public class AppController {
     @FXML
     Button b_entry, b_exit;
 
-
     @FXML
     public void initialize() {
 
