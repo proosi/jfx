@@ -14,7 +14,7 @@ public class AppController {
     TextField name;
 
     @FXML
-    Label current_name;
+    Label current_name, valuePersonName;
 
     @FXML
     Button b_entry, b_exit;
@@ -23,6 +23,7 @@ public class AppController {
     public void initialize() {
 
         name.textProperty().bindBidirectional(person.getName());
+        valuePersonName.textProperty().bind(person.getName());
              
     }
 
@@ -62,5 +63,5 @@ public class AppController {
     
     }
 
-
+// komentarz w celu sprawdzenia git'a
 }
